@@ -1,0 +1,109 @@
+.home-page {
+  min-height: 100vh;
+  padding-bottom: 5rem;
+  /* Space for fixed navigation */
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding: 1rem 0;
+}
+
+.page-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.items-badge {
+  background: #4CAF50;
+  color: white;
+  padding: 0.375rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.inventory-section {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.shopping-section {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.items-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.no-results {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: rgba(245, 232, 216, 0.6);
+}
+
+.no-results-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
+.no-results h3 {
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.no-results p {
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .home-page {
+    padding-bottom: 4.5rem;
+  }
+
+  .page-header {
+    margin-bottom: 1rem;
+    padding: 0.75rem 0;
+  }
+
+  .page-title {
+    font-size: 1.25rem;
+  }
+
+  .items-badge {
+    padding: 0.25rem 0.625rem;
+    font-size: 0.8rem;
+  }
+
+  .no-results {
+    padding: 2rem 1rem;
+  }
+
+  .no-results-icon {
+    font-size: 2.5rem;
+  }
+
+  .no-results h3 {
+    font-size: 1rem;
+  }
+}
